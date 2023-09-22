@@ -13,6 +13,8 @@
   cursor: pointer;
 }
 
+
+
 .suggestions__header {
   display: flex;
   justify-content: space-between;
@@ -39,6 +41,11 @@
   justify-content: space-between;
   margin-top: 20px;
   align-items: center;
+}
+
+.suggestions__username:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.128);
 }
 
 .follow__button {
