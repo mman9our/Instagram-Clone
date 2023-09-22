@@ -1,13 +1,12 @@
-.homepage {
+.timeline {
   display: flex;
   flex-direction: row;
 }
 
-.homepage__navWraper {
-  position: relative;
-  flex: 0.2;
+.home__left {
+  flex: 0.7;
 }
 
-.homepage__timeline {
-  flex: 0.8;
+.home__right {
+  flex: 0.3;
 }
