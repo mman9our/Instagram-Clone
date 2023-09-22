@@ -1,6 +1,6 @@
 
 function Sidenav() {
-  return <div>Sidenav</div>;
+  return <div className="sidenav"></div>;
 }
 
 export default Sidenav;

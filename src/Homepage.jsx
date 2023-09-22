@@ -1,10 +1,11 @@
 import "./Homepage.css";
+import Sidenav from "./navigation/Sidenav"
 
 function Homepage() {
   return (
     <div className="homepage">
       <div className="homepage__navWraper">
-        {/* <Sidenav /> */}
+        <Sidenav />
       </div>
       <div className="homepage__timeline">
         {/* <Timeline /> */}
