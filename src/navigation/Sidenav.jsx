@@ -49,7 +49,7 @@ function Sidenav() {
         </button>
         <button className="sidenav__button">
           <Avatar
-            src="src/assets/african-man.png"
+            src="src/assets/Avatars/man.png"
             sx={{ bgcolor: deepPurple[500], fontSize: "17px" }}
           ></Avatar>
           <span>mman9our</span>
