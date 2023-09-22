@@ -1,5 +1,5 @@
 .sidenav {
-  position: fixed;
+  /* position: fixed; */ /* This line cause the pages to get over the sidenav so i delete it*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;

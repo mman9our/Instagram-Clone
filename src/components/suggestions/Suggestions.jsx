@@ -116,6 +116,7 @@ function Suggestions() {
       </div>
     </div>
   );
+
 }
 
 export default Suggestions;
