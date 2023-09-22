@@ -8,13 +8,14 @@
   font-weight: bold;
 }
 
-.suggestions__see__more{
+.suggestions__see__more {
   color: white;
+  cursor: pointer;
 }
 
-.suggestions__header{
+.suggestions__header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 15px;
 }
 
