@@ -1,5 +1,6 @@
 import "./Homepage.css";
-import Sidenav from "./navigation/Sidenav"
+import Sidenav from "./navigation/Sidenav";
+import Timeline from "./timeline/Timeline";
 
 function Homepage() {
   return (
@@ -8,7 +9,7 @@ function Homepage() {
         <Sidenav />
       </div>
       <div className="homepage__timeline">
-        {/* <Timeline /> */}
+        <Timeline />
       </div>
     </div>
   );
