@@ -8,13 +8,16 @@
   font-weight: bold;
 }
 
-.suggestions__see__more{
+.suggestions__see__more {
   color: white;
+  cursor: pointer;
 }
 
-.suggestions__header{
+
+
+.suggestions__header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 15px;
 }
 
@@ -38,6 +41,11 @@
   justify-content: space-between;
   margin-top: 20px;
   align-items: center;
+}
+
+.suggestions__username:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.128);
 }
 
 .follow__button {
