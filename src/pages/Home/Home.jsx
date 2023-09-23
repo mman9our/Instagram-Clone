@@ -7,9 +7,7 @@ function Home() {
 	return (
 		<>
 			<div className="home__left">
-				<div className="home__posts">
 					<Timeline />
-				</div>
 			</div>
 			<div className="home__right">
 				<Suggestions />
