@@ -1,13 +1,11 @@
-.timeline {
-  display: flex;
-  flex-direction: row;
-}
+
 
 .home__left {
-  flex: 0.7;
-  display: flex;
   justify-content: center;
+  flex: 0.7;
+  margin: 0rem 10rem;
 }
+
 
 .home__right {
   flex: 0.3;
