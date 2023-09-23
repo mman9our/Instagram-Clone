@@ -1,0 +1,12 @@
+.explore-wrapper {
+    align-items: center;
+   display: flex;
+   justify-content: center;
+   margin: 25%;
+   margin-top: 20px;
+
+}
+.explore-parent{
+    display: flex;
+    flex-wrap: wrap;
+}
