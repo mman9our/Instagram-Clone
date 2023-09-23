@@ -7,7 +7,7 @@ function Timeline() {
 	const [posts] = useState([
 		{
 			id: 1,
-			user: "Narjis",
+			user: "narjis",
 			postImage:
 				"https://i.seadn.io/gcs/files/86d12c8064b032cb853466418480482e.png?auto=format&dpr=1&w=1000",
 			likes: 744,
@@ -18,7 +18,7 @@ function Timeline() {
 		},
 		{
 			id: 2,
-			user: "Nada",
+			user: "nada",
 			postImage:
 				"https://i.seadn.io/gcs/files/19cfef5b9ae1f5bff9e57f1264a7bdad.png?auto=format&dpr=1&w=1000",
 			likes: 432,
@@ -29,7 +29,7 @@ function Timeline() {
 		},
 		{
 			id: 3,
-			user: "Zain",
+			user: "zain",
 			postImage:
 				"https://i.seadn.io/gcs/files/23e1eeb7ba33f603b46b1dd8f27b64a9.png?auto=format&dpr=1&w=1000",
 			likes: 140,
@@ -40,7 +40,7 @@ function Timeline() {
 		},
 		{
 			id: 4,
-			user: "Ezz",
+			user: "ezz",
 			postImage:
 				"https://i.seadn.io/gcs/files/aa7190a6950184f3d57bb806fa909ec9.png?auto=format&dpr=1&w=1000",
 			likes: 14,
