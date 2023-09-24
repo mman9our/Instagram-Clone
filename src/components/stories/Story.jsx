@@ -56,7 +56,7 @@ function Story() {
             <div className="avatarContainer">
               <Avatar
                 src={story.profileImage}
-                sx={{ width: 56, height: 56, bgcolor: story.bgColor }}
+                sx={{ width: 65, height: 65, bgcolor: story.bgColor }}
               />
             </div>
             <Typography
