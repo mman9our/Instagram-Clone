@@ -18,7 +18,7 @@
 .suggestions__header {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .username__left {
@@ -39,7 +39,7 @@
 .suggestions__username {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
   align-items: center;
 }
 
