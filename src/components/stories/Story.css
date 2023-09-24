@@ -2,7 +2,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(to right, #d300c5, #ff234b, #ffc900);
+  background: linear-gradient(230deg, #D300C5 11.19%, #FF234B 50.32%, #FFC900 125.69%);;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ hr {
   margin: 0px 0px 0px 40px;
   border: none;
   height: 0.1px;
-  background-color: grey;
+  background-color: rgb(49, 49, 49);
 }
 
 .story__header {

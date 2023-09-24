@@ -2,11 +2,11 @@
 
 .home__left {
   justify-content: center;
-  flex: 0.7;
-  margin: 0rem 18rem;
+  flex: 0.6;
+  margin: 0rem 15rem;
 }
 
 
 .home__right {
-  flex: 0.3;
+  /* flex: 0.4; */
 }
