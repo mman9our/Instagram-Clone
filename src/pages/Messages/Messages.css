@@ -1,6 +1,7 @@
 
 .messages{
     width: 100%;
+    margin-left: 250px;
 }
 .messages-wrapper {
     display: flex;
