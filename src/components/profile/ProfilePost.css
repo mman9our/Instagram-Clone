@@ -15,7 +15,6 @@ right: 0;
     z-index: 3;
     align-items: center;
     flex: 1 0 20%; /* explanation below */
-    width: 32%;
 }
 
 .reactions {
