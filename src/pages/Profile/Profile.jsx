@@ -91,6 +91,7 @@ const Profile = () => {
 			isVideo: false,
 		},
 	];
+	
 	return (
 		<div className="profile">
 			<div className="profile-details">
