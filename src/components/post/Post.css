@@ -3,7 +3,6 @@
   margin: 20px 40px 50px 40px;
 }
 
-
 .post__header {
   display: flex;
   justify-content: space-between;
@@ -27,7 +26,6 @@
 .post__image > img {
   width: 100%;
   border-radius: 6px;
-  border: 0.6px solid rgba(128, 128, 128, 0.516);
 }
 
 
@@ -43,6 +41,6 @@
   font-size: 30px;
 }
 
-.postIcon :hover {
+.postIcon:hover {
   cursor: pointer;
 }

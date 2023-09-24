@@ -13,7 +13,7 @@ const ProfilePost = ({ img, likes, comments }) => {
 	};
 	return (
 		<div
-			className="post"
+			className="ProfilePost"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 		>

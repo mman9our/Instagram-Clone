@@ -2,6 +2,7 @@ import { lazy } from "react";
 
 import Home from "../pages/Home/Home";
 const Profile = lazy(() => import("../pages/Profile/Profile"));
+const InProgress = lazy(() => import("../pages/InProgress/InProgress"));
 const Authenticate = lazy(() =>
   import("../pages/Authenticate/Authenticate.jsx")
 );
@@ -27,6 +28,11 @@ export const routes = [
     path: "/auth",
     title: routeName.Login,
     component: <Authenticate />,
+  },
+  {
+    path: "/inprogress",
+    title: routeName.Login,
+    component: <InProgress />,
   },
   {
     path: "/profile",

@@ -44,14 +44,17 @@ function Sidenav() {
             <span>Home</span>
           </button>
         </Link>
-        <button
-          className="sidenav__button"
-          style={{ fontWeight: isButtonSelected("Search") }}
-          onClick={() => handleButtonClick("Search")}
-        >
-          <SearchIcon />
-          <span>Search</span>
-        </button>
+        <Link to="/inprogress" style={{ textDecoration: "none" }}>
+          <button
+            className="sidenav__button"
+            style={{ fontWeight: isButtonSelected("Search") }}
+            onClick={() => handleButtonClick("Search")}
+          >
+            <SearchIcon />
+            <span>Search</span>
+          </button>
+        </Link>
+
         <Link to="/explore" style={{ textDecoration: "none" }}>
           <button
             className="sidenav__button"
@@ -62,14 +65,17 @@ function Sidenav() {
             <span>Explore</span>
           </button>
         </Link>
-        <button
-          className="sidenav__button"
-          style={{ fontWeight: isButtonSelected("Reels") }}
-          onClick={() => handleButtonClick("Reels")}
-        >
-          <SlideshowIcon />
-          <span>Reels</span>
-        </button>
+        <Link to="/inprogress" style={{ textDecoration: "none" }}>
+          <button
+            className="sidenav__button"
+            style={{ fontWeight: isButtonSelected("Reels") }}
+            onClick={() => handleButtonClick("Reels")}
+          >
+            <SlideshowIcon />
+            <span>Reels</span>
+          </button>
+        </Link>
+
         <Link to="/messages" style={{ textDecoration: "none" }}>
           <button
             className="sidenav__button"
@@ -80,22 +86,27 @@ function Sidenav() {
             <span>Messages</span>
           </button>
         </Link>
-        <button
-          className="sidenav__button"
-          style={{ fontWeight: isButtonSelected("Notifications") }}
-          onClick={() => handleButtonClick("Notifications")}
-        >
-          <FavoriteBorderIcon />
-          <span>Notifications</span>
-        </button>
-        <button
-          className="sidenav__button"
-          style={{ fontWeight: isButtonSelected("Create") }}
-          onClick={() => handleButtonClick("Create")}
-        >
-          <AddCircleOutlineIcon />
-          <span>Create</span>
-        </button>
+        <Link to="/inprogress" style={{ textDecoration: "none" }}>
+          <button
+            className="sidenav__button"
+            style={{ fontWeight: isButtonSelected("Notifications") }}
+            onClick={() => handleButtonClick("Notifications")}
+          >
+            <FavoriteBorderIcon />
+            <span>Notifications</span>
+          </button>
+        </Link>
+        <Link to="/inprogress" style={{ textDecoration: "none" }}>
+          <button
+            className="sidenav__button"
+            style={{ fontWeight: isButtonSelected("Create") }}
+            onClick={() => handleButtonClick("Create")}
+          >
+            <AddCircleOutlineIcon />
+            <span>Create</span>
+          </button>
+        </Link>
+
         <Link to="/profile" style={{ textDecoration: "none" }}>
           <button className="sidenav__button">
             <Avatar
