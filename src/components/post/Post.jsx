@@ -20,8 +20,6 @@ function Post({ user, postImage, likes, timestamp, description, comments }) {
           >
           </Avatar>{" "}
 
-        
-
           {user} • <span style={{ marginLeft: "10px" }}>{timestamp}</span>
         </div>
         <MoreHorizIcon />
