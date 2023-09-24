@@ -9,13 +9,18 @@ import {
 	ListItemText,
 	Menu,
 	MenuItem,
-	Toolbar,
 } from "@mui/material";
 import "./Messages.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useState } from "react";
-import { EditNotifications } from "@mui/icons-material";
 import InboxIcon from "@mui/icons-material/Inbox";
+import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
+import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import SentimentSatisfiedAltOutlinedIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
+import KeyboardVoiceOutlinedIcon from "@mui/icons-material/KeyboardVoiceOutlined";
+import BrokenImageOutlinedIcon from "@mui/icons-material/BrokenImageOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 const Messages = () => {
 	const [anchorEl, setAnchorEl] = useState(null);
 	const open = Boolean(anchorEl);
@@ -91,7 +96,7 @@ const Messages = () => {
 						<div className="request">Request</div>
 					</div>
 					<List>
-						{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+						{["Inbox", "Starred", "Send email", "Drafts"].map((text) => (
 							<ListItem key={text} disablePadding>
 								<ListItemButton>
 									<ListItemIcon
@@ -106,17 +111,61 @@ const Messages = () => {
 						))}
 					</List>
 				</div>
-				<hr style={{ backgroundColor: "red", color: "red" }} />
+				<hr style={{ border: " 1px solid rgba(255, 255, 255, 0.128)" }} />
+
 				<div className="content">
 					<div className="contact-info">
-					<div className="account-details">
-
+						<div className="account-details">
+							<Avatar src="src/assets/Avatars/nurse.png" />
+							<span
+								style={{
+									paddingLeft: "10px",
+									fontWeight: "900",
+								}}
+							>
+								Ibraheem Shawhnee
+							</span>
+						</div>
+						<div className="communication-methods">
+							<span>
+								<CallOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</span>
+							<span>
+								<VideocamOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</span>
+							<span>
+								<InfoOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</span>
+						</div>
 					</div>
-						<Avatar src="src/assets/Avatars/nurse.png" />
+					<hr />
+					<div className="chat">
+						<div className="left">
+							<SentimentSatisfiedAltOutlinedIcon />
+							<input
+								style={{
+									paddingLeft: "10px",
+									background: "none",
+									border: "none",
+									color: "white",
+									width: "400px",
+									fontSize: "20px",
+								}}
+							></input>
+						</div>
+						<div className="right">
+							<KeyboardVoiceOutlinedIcon />
+							<BrokenImageOutlinedIcon />
+							<FavoriteBorderOutlinedIcon />
+						</div>
 					</div>
-					<div className="chat"> justifyContent</div>
 				</div>
-				<Divider sx={{ color: "white", backgroundColor: "red" }} />
 			</div>
 		</div>
 	);
