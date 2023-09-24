@@ -4,14 +4,93 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import InsertLinkSharpIcon from "@mui/icons-material/InsertLinkSharp";
 import ProfileButton from "../../components/profile/profileButton";
 import { useState } from "react";
+import { TabContext, TabPanel } from "@mui/lab";
+import ProfilePost from "../../components/profile/ProfilePost";
 
 const Profile = () => {
-	const [value, setValue] = useState(0);
+	const [value, setValue] = useState("1");
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
 	};
-
+	const posts = [
+		{
+			img: "src/assets/ExplorePics/explorePic8.avif",
+			likes: 400,
+			comments: 230,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic7.avif",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic7.avif",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic7.avif",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+	];
+	const reels = [
+		{
+			img: "src/assets/ExplorePics/explorePic2.avif",
+			likes: 400,
+			comments: 230,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic3.avif",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic4.avif",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic1.avif",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+	];
+	const tagged = [
+		{
+			img: "src/assets/ExplorePics/explorePic10.webp",
+			likes: 400,
+			comments: 230,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic11.webp",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic14.webp",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+		{
+			img: "src/assets/ExplorePics/explorePic13.webp",
+			likes: 200,
+			comments: 400,
+			isVideo: false,
+		},
+	];
 	return (
 		<div className="profile">
 			<div className="profile-details">
@@ -64,74 +143,146 @@ const Profile = () => {
 						marginTop: "10px",
 					}}
 				>
-					<Tabs
-						value={value}
-						onChange={handleChange}
-						centered
-						TabIndicatorProps={{
-							sx: {
-								backgroundColor: "white",
+					<TabContext value={value}>
+						<Tabs
+							value={value}
+							onChange={handleChange}
+							centered
+							TabIndicatorProps={{
+								sx: {
+									backgroundColor: "white",
+									padding: 0,
+									top: 0,
+								},
+							}}
+						>
+							<Tab
+								value="1"
+								label="Posts"
+								sx={{
+									color: "#ffffff",
+									"&.Mui-selected": {
+										color: "white",
+									},
+									":hover": {
+										fontWeight: 900,
+										color: "white",
+									},
+									"&:active": {
+										boxShadow: "none",
+										fontWeight: 900,
+										backgroundColor: "#101010",
+										color: "#ffffff",
+									},
+								}}
+							/>
+							<Tab
+								value="2"
+								label="Reels"
+								sx={{
+									color: "#ffffff",
+									"&.Mui-selected": {
+										color: "white",
+									},
+									":hover": {
+										fontWeight: 900,
+										color: "white",
+									},
+									"&:active": {
+										boxShadow: "none",
+										backgroundColor: "#101010",
+										color: "#ffffff",
+									},
+								}}
+							/>
+							<Tab
+								value="3"
+								label="Tagged"
+								sx={{
+									color: "#ffffff",
+									"&.Mui-selected": {
+										color: "white",
+									},
+									":hover": {
+										color: "white",
+										fontWeight: 900,
+									},
+									"&:active": {
+										boxShadow: "none",
+										backgroundColor: "#101010",
+										color: "#ffffff",
+									},
+								}}
+							/>
+						</Tabs>
+						<TabPanel
+							value="1"
+							sx={{
+								padding: 0,
 
-								top: 0,
-							},
-						}}
-					>
-						<Tab
-							label="Posts"
-							sx={{
-								color: "#ffffff",
-								"&.Mui-selected": {
-									color: "white",
-								},
-								":hover": {
-									fontWeight: 900,
-									color: "white",
-								},
-								"&:active": {
-									boxShadow: "none",
-									fontWeight: 900,
-									backgroundColor: "#101010",
-									color: "#ffffff",
-								},
+								color: "white",
+								display: "flex",
+								flexWrap: "wrap",
+								justifyContent: "space-between",
+								width: "100%",
 							}}
-						/>
-						<Tab
-							label="Reels"
+						>
+							{posts.map(({ img, likes, comments }, index) => {
+								return (
+									<ProfilePost
+										key={index}
+										img={img}
+										likes={likes}
+										comments={comments}
+									/>
+								);
+							})}
+						</TabPanel>
+						<TabPanel
+							value="2"
 							sx={{
-								color: "#ffffff",
-								"&.Mui-selected": {
-									color: "white",
-								},
-								":hover": {
-									fontWeight: 900,
-									color: "white",
-								},
-								"&:active": {
-									boxShadow: "none",
-									backgroundColor: "#101010",
-									color: "#ffffff",
-								},
+								padding: 0,
+								color: "white",
+								display: "flex",
+								flexWrap: "wrap",
+								justifyContent: "space-between",
+								width: "100%",
 							}}
-						/>
-						<Tab
-							label="Tagged"
+						>
+							{reels.map(({ img, likes, comments }, index) => {
+								return (
+									<ProfilePost
+										key={index}
+										img={img}
+										likes={likes}
+										comments={comments}
+									/>
+								);
+							})}
+						</TabPanel>
+						<TabPanel
+							value="3"
 							sx={{
-								color: "#ffffff",
-								"&.Mui-selected": {
-									color: "white",
-								},
-								":hover": {
-									color: "white",
-									fontWeight: 900,
-								},
-								"&:active": {
-									boxShadow: "none",
-									backgroundColor: "#101010",
-									color: "#ffffff",
-								},
+								padding: 0,
+								color: "white",
+								display: "flex",
+								flexWrap: "wrap",
+								justifyContent: "space-between",
+								width: "100%",
 							}}
-						/>
-					</Tabs>
+						>
+							{tagged.map(({ img, likes, comments }, index) => {
+								return (
+									<ProfilePost
+										key={index}
+										img={img}
+										likes={likes}
+										comments={comments}
+									/>
+								);
+							})}
+						</TabPanel>
+					</TabContext>
 				</Box>
 			</div>
 		</div>

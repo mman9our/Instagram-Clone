@@ -1,0 +1,34 @@
+.avatarContainer {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #d300c5, #ff234b, #ffc900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.stories__section {
+  width: 680px;
+  margin: 30px 40px 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+hr {
+  width: 680px;
+  margin: 0px 0px 0px 40px;
+  border: none;
+  height: 0.3px;
+  background-color: grey;
+}
+
+.story__header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,70 @@
+.photo-icon{
+    padding :10px;
+    position: absolute;
+    z-index: 2;
+    top:0;
+right: 0;    
+}
+.post img {
+    width: 100%;
+     height: 100%;
+     object-fit: cover; /* or 'contain' based on your preference */
+ }
+.post{
+    position: relative;
+    z-index: 3;
+    align-items: center;
+    flex: 1 0 20%; /* explanation below */
+    width: 32%;
+}
+
+.reactions {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.reactions > div {
+    align-items: center;
+    display: flex;
+   
+   padding-left: 5px;
+    font-weight: 700;
+    text-align: center;
+}
+.post :hover{
+    background-color: rgba(255, 255, 255, 0.128);
+    opacity: 0.5;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
