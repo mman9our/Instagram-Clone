@@ -17,10 +17,10 @@ import InboxIcon from "@mui/icons-material/Inbox";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import SentimentSatisfiedAltOutlinedIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
 import KeyboardVoiceOutlinedIcon from "@mui/icons-material/KeyboardVoiceOutlined";
 import BrokenImageOutlinedIcon from "@mui/icons-material/BrokenImageOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import MoodOutlinedIcon from "@mui/icons-material/MoodOutlined";
 const Messages = () => {
 	const [anchorEl, setAnchorEl] = useState(null);
 	const open = Boolean(anchorEl);
@@ -34,8 +34,8 @@ const Messages = () => {
 		<div className="messages">
 			<div className="messages-wrapper">
 				<div className="inbox">
-					<div className="upper-inbox">
-						<div className="accounts">
+					<div className="inbox-top-section">
+						<div className="account-name">
 							<Button
 								sx={{
 									fontWeight: 800,
@@ -64,6 +64,7 @@ const Messages = () => {
 								mman9our
 							</Button>
 							<Menu
+								sx={{ width: "130px" }}
 								id="demo-customized-menu"
 								MenuListProps={{
 									"aria-labelledby": "demo-customized-button",
@@ -87,82 +88,101 @@ const Messages = () => {
 								</MenuItem>
 							</Menu>
 						</div>
-						<div className="new-message">
+						<div className="create-new-message">
 							<InboxIcon />
 						</div>
 					</div>
-					<div className="messages-section">
-						<div>Messages</div>
-						<div className="request">Request</div>
+					<div className="inbox-middle-section">
+						<div className="messages-text">Messages</div>
+						<div className="request-text">
+							<a href="#">Request</a>
+						</div>
 					</div>
-					<List>
-						{["Inbox", "Starred", "Send email", "Drafts"].map((text) => (
-							<ListItem key={text} disablePadding>
-								<ListItemButton>
-									<ListItemIcon
-										sx={{ color: "white", justifyContent: "space-around" }}
-									>
-										<Avatar sizes="large" src={"src/assets/Avatars/boy.png"} />
-										{/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
-									</ListItemIcon>
-									<ListItemText primary={text} />
-								</ListItemButton>
-							</ListItem>
-						))}
-					</List>
+					<div className="inbox-bottom-section">
+						<List>
+							{[
+								"Ibraheem Shawhnee",
+								"Rasheed AbuKhader",
+								"Ahmad AbuKhader",
+								"Khaled Mohammad",
+							].map((text) => (
+								<ListItem key={text} disablePadding>
+									<ListItemButton>
+										<ListItemIcon
+											sx={{ color: "white", justifyContent: "space-around" }}
+										>
+											<Avatar
+												sizes="large"
+												src={"src/assets/Avatars/boy.png"}
+											/>
+											{/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
+										</ListItemIcon>
+										<ListItemText primary={text} />
+									</ListItemButton>
+								</ListItem>
+							))}
+						</List>
+					</div>
 				</div>
-				<hr style={{ border: " 1px solid rgba(255, 255, 255, 0.128)" }} />
 
 				<div className="content">
-					<div className="contact-info">
-						<div className="account-details">
-							<Avatar src="src/assets/Avatars/nurse.png" />
-							<span
-								style={{
-									paddingLeft: "10px",
-									fontWeight: "900",
-								}}
-							>
-								Ibraheem Shawhnee
-							</span>
-						</div>
-						<div className="communication-methods">
-							<span>
-								<CallOutlinedIcon
-									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
-								/>
-							</span>
-							<span>
-								<VideocamOutlinedIcon
-									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
-								/>
-							</span>
-							<span>
-								<InfoOutlinedIcon
-									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
-								/>
-							</span>
+					<div className="line">
+						<div className="chat-info">
+							<div className="user-info">
+								<div className="user-image">
+									<Avatar
+										src="src/assets/Avatars/boy.png"
+										sx={{ width: "60px", height: "60px" }}
+									/>
+								</div>
+								<div className="user-name">Ibraheem Shawhnee</div>
+							</div>
+							<div className="communication">
+								<span>
+									<CallOutlinedIcon
+										sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+									/>
+								</span>
+								<span>
+									<VideocamOutlinedIcon
+										sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+									/>
+								</span>
+								<span>
+									<InfoOutlinedIcon
+										sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+									/>
+								</span>
+							</div>
 						</div>
 					</div>
-					<hr />
-					<div className="chat">
-						<div className="left">
-							<SentimentSatisfiedAltOutlinedIcon />
-							<input
-								style={{
-									paddingLeft: "10px",
-									background: "none",
-									border: "none",
-									color: "white",
-									width: "400px",
-									fontSize: "20px",
-								}}
-							></input>
+					<div className="chat-content">
+						<div className="message">
+							<div className="emojis">
+								<MoodOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</div>
+							<div className="input-message">
+								<input placeholder="Message"></input>
+							</div>
 						</div>
-						<div className="right">
-							<KeyboardVoiceOutlinedIcon />
-							<BrokenImageOutlinedIcon />
-							<FavoriteBorderOutlinedIcon />
+						<div className="message-type">
+							<span>
+								<KeyboardVoiceOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</span>
+							<span>
+								<BrokenImageOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</span>
+							<span>
+								<FavoriteBorderOutlinedIcon
+									sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 30 } }}
+								/>
+							</span>
 						</div>
 					</div>
 				</div>
