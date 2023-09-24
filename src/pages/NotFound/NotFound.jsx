@@ -1,5 +1,7 @@
 import "./NotFound.css";
 import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -20,6 +22,11 @@ const NotFound = () => {
           The link you followed may be broken, or the page may have been
           removed. Go back to Instagram.
         </p>
+        <Link to="/">
+          <Button variant="outlined" color="error">
+            Back To Home
+          </Button>
+        </Link>
       </Container>
     </>
   );

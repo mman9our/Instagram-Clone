@@ -16,12 +16,7 @@ function Post({ user, postImage, likes, timestamp, description, comments }) {
           <Avatar
             src={postImage}
             sx={{ bgcolor: indigo[500], marginRight: "10px" }}
-
-          >
-          </Avatar>{" "}
-
-        
-
+          ></Avatar>{" "}
           {user} • <span style={{ marginLeft: "10px" }}>{timestamp}</span>
         </div>
         <MoreHorizIcon />
