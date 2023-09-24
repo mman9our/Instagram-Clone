@@ -21,7 +21,7 @@ function Story() {
     {
       id: 2,
       username: "moath",
-      profileImage: "src/assets/Avatars/boy.png",
+      profileImage: "src/assets/StoriesAvatars/driver.png",
     },
     {
       id: 3,
@@ -31,17 +31,17 @@ function Story() {
     {
       id: 4,
       username: "saja",
-      profileImage: "src/assets/Avatars/shop-assistant.png",
+      profileImage: "src/assets/StoriesAvatars/female-chef.png",
     },
     {
       id: 5,
       username: "dalal",
-      profileImage: "src/assets/Avatars/singer.png",
+      profileImage: "src/assets/StoriesAvatars/flight-attendant.png",
     },
     {
       id: 6,
       username: "ahmad",
-      profileImage: "src/assets/Avatars/steward.png",
+      profileImage: "src/assets/StoriesAvatars/graduated-student.png",
     },
   ]);
 
