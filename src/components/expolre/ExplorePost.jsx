@@ -16,7 +16,7 @@ const ExplorePost = ({ img, likes, comments, isVideo }) => {
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 		>
-			<img src={img} />
+			<img src={img}  />
 			<div className="video-photo-icon">
 				{isVideo && <PlayCircleOutlineIcon />}
 			</div>
