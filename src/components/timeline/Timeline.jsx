@@ -54,7 +54,6 @@ function Timeline() {
   return (
     <>
       <Story />
-     
       {posts.map((post) => (
         <Post
           key={post.id}

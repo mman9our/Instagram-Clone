@@ -12,8 +12,8 @@ import {
 function Suggestions() {
 	return (
 		<div className="suggestions">
-			<div className="suggestions__username">
-				<div className="username__left">
+			<div className="suggestions__username__header">
+				<div className="username__left__header">
 					<span className="avatar">
 						<Avatar
 							sx={{ bgcolor: blueGrey[500], width: 56, height: 56 }}
