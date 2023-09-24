@@ -16,9 +16,12 @@ function Post({ user, postImage, likes, timestamp, description, comments }) {
           <Avatar
             src={postImage}
             sx={{ bgcolor: indigo[500], marginRight: "10px" }}
+
           >
-            {user.charAt(0).toUpperCase()}
           </Avatar>{" "}
+
+        
+
           {user} • <span style={{ marginLeft: "10px" }}>{timestamp}</span>
         </div>
         <MoreHorizIcon />
