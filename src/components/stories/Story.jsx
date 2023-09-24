@@ -1,47 +1,50 @@
 import { Avatar, Typography } from "@mui/material";
-import { blueGrey } from "@mui/material/colors";
 import "./Story.css";
 import { useState } from "react";
 
 function Story() {
-  const styles = {
-    avatar: {
-      width: 56,
-      height: 56,
-      bgcolor: blueGrey[500],
-    },
-  };
-
   const [stories] = useState([
     {
       id: 1,
-      username: "mman9our",
-      profileImage: "src/assets/Avatars/man.png",
+      username: "ameena",
+      profileImage: "src/assets/StoriesAvatars/saleswoman.png",
+      bgColor: "#071a33", 
     },
     {
       id: 2,
       username: "moath",
       profileImage: "src/assets/StoriesAvatars/driver.png",
+      bgColor: "#071a33",
     },
     {
       id: 3,
       username: "obada",
       profileImage: "src/assets/Avatars/cock-man.png",
+      bgColor: "#071a33", 
     },
     {
       id: 4,
       username: "saja",
       profileImage: "src/assets/StoriesAvatars/female-chef.png",
+      bgColor: "#071a33", 
     },
     {
       id: 5,
       username: "dalal",
       profileImage: "src/assets/StoriesAvatars/flight-attendant.png",
+      bgColor: "#071a33", 
     },
     {
       id: 6,
       username: "ahmad",
       profileImage: "src/assets/StoriesAvatars/graduated-student.png",
+      bgColor: "#071a33", 
+    },
+    {
+      id: 7,
+      username: "adel",
+      profileImage: "src/assets/StoriesAvatars/farmer-avatar.png",
+      bgColor: "#071a33", 
     },
   ]);
 
@@ -51,7 +54,10 @@ function Story() {
         {stories.map((story) => (
           <div key={story.id} className="story__header">
             <div className="avatarContainer">
-              <Avatar src={story.profileImage} sx={styles.avatar} />
+              <Avatar
+                src={story.profileImage}
+                sx={{ width: 56, height: 56, bgcolor: story.bgColor }}
+              />
             </div>
             <Typography
               sx={{ fontSize: 12, color: "grey" }}
