@@ -18,7 +18,7 @@ function Suggestions() {
         <div className="username__left__header">
           <span className="avatar">
             <Avatar
-              sx={{ bgcolor: blueGrey[500], width: 56, height: 56 }}
+              sx={{ bgcolor: blueGrey[500], width: 65, height: 65 }}
               src="src/assets/Avatars/boy.png"
             ></Avatar>
           </span>
