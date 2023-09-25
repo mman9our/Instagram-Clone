@@ -1,294 +1,87 @@
-.messages {
-    width: 100%;
-    margin-left: 200px;
-    height: 400px;
-}
 
+.messages{
+    width: 100%;
+    margin-left:250px;
+}
 .messages-wrapper {
     display: flex;
 }
 .inbox{
     width:20%;
-    height: fit-content;
-    padding: 20px 10px 10px 10px;
-    color:white;
-    font-weight: 900;
+    border-right: 1px solid rgba(128, 128, 128, 0.305);
 }
 .content{
     width: 80%;
-    height: 1000px;
-
-}
-.upper-inbox{
-    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    flex-direction: column;
+    height: 900px;
 }
-.messages-section{
+
+.inbox-top-section{
+    margin:25px;
     display: flex;
     justify-content: space-between;
-}
-.request{
-    color:dimgray;
-    font-weight: 500;
-}
-
-.content{
-    margin:20px
-}
-.contact-info{
-    display: flex;
+    font-size: 18px;
+    font-weight: 900;
     align-items: center;
+}
+.inbox-middle-section{
+    margin:25px;
+    display: flex;
     justify-content: space-between;
-}
-.account-details{
-    display: flex;
     align-items: center;
+    font-weight: 900;
+
 }
- 
-.chat {
-    border: 1px solid white;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 0;
+.inbox-middle-section a{
+    color:gray;
+    text-decoration: none;
+}
+.inbox-bottom-section{
+    font-weight: 900;
+}
+.chat-info{
+    margin:25px 25px 5px 25px;
+
     display: flex;
-    padding: 10px;
-    align-items: center;
     justify-content: space-between;
-    width: 67%; 
-    z-index: 1;
+    align-items: center;
 }
-.left{
+.line{
+    border-bottom: 1px solid gray;}
+.user-info{
     display: flex;
     align-items: center;
 }
 
-
-
-@media screen and (max-width: 767px) {
-    .messages {
-        width: 80%;
-        margin-left: 200px;
-        height: 400px;
-    }
-    
-    .messages-wrapper {
-        display: flex;
-    
-    }
-    .communication{
-        font-size: small;
-    }
-    .inbox{
-        width:50%;
-        height: fit-content;
-        padding: 20px 10px 10px 10px;
-        color:white;
-        font-weight: 900;
-    }
-    .content{
-        width: 80%;
-        height: 1000px;
-    
-    }
-    .upper-inbox{
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-    .messages-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .request{
-        color:dimgray;
-        font-weight: 500;
-    }
-    
-    .content{
-        margin:20px
-    }
-    .contact-info{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .account-details{
-        display: flex;
-        align-items: center;
-    }
-     
-    .chat {
-        border: 1px solid white;
-        border-radius: 20px;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        padding: 3px;
-        align-items: center;
-        justify-content: space-between;
-        width: 50%; 
-        z-index: 1;
-    }
-    .left{
-        display: flex;
-        align-items: center;
-        flex-wrap: "wrap";
-    }
-    
-}
-@media screen and (max-width: 600px) {
-
+.user-name{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 10px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 959px) {
-
+.chat-content{
+    margin: 5px 25px 25px 25px;
+display: flex;
+justify-content: space-between;
+border: 1px solid white;
+border-radius: 20px;
+padding: 10px;
 }
 
-@media screen and (min-width: 960px) and (max-width: 1279px) {
-    .messages {
-        width: 100%;
-        margin-left: 200px;
-        height: 400px;
-    }
-    
-    .messages-wrapper {
-        display: flex;
-    
-    }
-    .inbox{
-        width:20%;
-        height: fit-content;
-        padding: 20px 10px 10px 10px;
-        color:white;
-        font-weight: 900;
-    }
-    .content{
-        width: 80%;
-        height: 1000px;
-    
-    }
-    .upper-inbox{
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-    .messages-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .request{
-        color:dimgray;
-        font-weight: 500;
-    }
-    
-    .content{
-        margin:20px
-    }
-    .contact-info{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .account-details{
-        display: flex;
-        align-items: center;
-    }
-     
-    .chat {
-        border: 1px solid white;
-        border-radius: 20px;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        width: 67%; 
-        z-index: 1;
-    }
-    .left{
-        display: flex;
-        align-items: center;
-    }
-    
+.message{
+    align-items: center;
+    display: flex;
 }
-
-@media screen and (min-width: 1280px) {
-    .messages {
-        width: 100%;
-        margin-left: 200px;
-        height: 400px;
-    }
-    
-    .messages-wrapper {
-        display: flex;
-    
-    }
-    .inbox{
-        width:20%;
-        height: fit-content;
-        padding: 20px 10px 10px 10px;
-        color:white;
-        font-weight: 900;
-    }
-    .content{
-        width: 80%;
-        height: 1000px;
-    
-    }
-    .upper-inbox{
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-    .messages-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .request{
-        color:dimgray;
-        font-weight: 500;
-    }
-    
-    .content{
-        margin:20px
-    }
-    .contact-info{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .account-details{
-        display: flex;
-        align-items: center;
-    }
-     
-    .chat {
-        border: 1px solid white;
-        border-radius: 20px;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        width: 67%; 
-        z-index: 1;
-    }
-    .left{
-        display: flex;
-        align-items: center;
-    }
-    
+.input-message input{
+    margin-left: 5px;
+    width: 950px;
+    padding-left: 10px;
+    font-size: 18px;
+    background:none;
+    border: none;
 }
-
-
-
 
 
 
