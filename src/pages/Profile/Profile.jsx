@@ -126,8 +126,8 @@ const Profile = () => {
               <InsertLinkSharpIcon />
               <a
                 href="https://bento.me/mman9our"
-								style={{ color: "white", paddingLeft: "4px" }}
-								target="blank"
+                style={{ color: "white", paddingLeft: "4px" }}
+                target="blank"
               >
                 bento.me/mman9our
               </a>
