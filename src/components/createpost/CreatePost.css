@@ -1,0 +1,14 @@
+.image-video{
+    padding: 10px 10px 10px 50px;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    transform: rotate(5deg);
+}
+.video{
+    position: absolute;
+    left: 85px;
+    top: 5px;
+    transform: rotate(330deg);
+}

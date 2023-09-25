@@ -1,7 +1,7 @@
 
 .messages{
     width: 100%;
-    margin-left: 250px;
+    margin-left:250px;
 }
 .messages-wrapper {
     display: flex;
@@ -16,7 +16,6 @@
     justify-content: space-between;
     flex-direction: column;
     height: 900px;
-
 }
 
 .inbox-top-section{
