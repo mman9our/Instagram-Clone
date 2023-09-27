@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: aquamarine;
 }
 .profile-avatar {
   width: 200px !important;
