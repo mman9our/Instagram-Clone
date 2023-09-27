@@ -70,7 +70,8 @@
 @media (max-width: 1394px) {
   .sidenav {
     position: relative;
-    min-width: 80px;
+
+    min-width: 20px;
   }
   .sidenav__button:hover {
     cursor: pointer;
