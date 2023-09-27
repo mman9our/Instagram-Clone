@@ -2,10 +2,10 @@ import { Avatar, Box, Tab, Tabs } from "@mui/material";
 import "./Profile.css";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import InsertLinkSharpIcon from "@mui/icons-material/InsertLinkSharp";
-import ProfileButton from "../../components/profile/profileButton";
+import ProfileButton from "../../components/profile/ProfileButton/ProfileButton";
 import { useState } from "react";
 import { TabContext, TabPanel } from "@mui/lab";
-import ProfilePost from "../../components/profile/ProfilePost";
+import ProfilePost from "../../components/profile/ProfilePost/ProfilePost";
 
 const Profile = () => {
 	const [value, setValue] = useState("1");
@@ -96,11 +96,7 @@ const Profile = () => {
 		<div className="profile">
 			<div className="profile-details">
 				<div className="profile-picture">
-					<Avatar
-						className="profile-avatar"
-						src="src/assets/Avatars/man.png"
-						// sx={{ width: 10, height: 100 }}
-					/>
+					<Avatar className="profile-avatar" src="src/assets/Avatars/man.png" />
 				</div>
 				<div className="profile-info-wrapper">
 					<div className="upper-profile-info">
@@ -138,6 +134,7 @@ const Profile = () => {
 			</div>
 			<div className="recent-posts">
 				<Box
+				className="recent-post-box"
 					sx={{
 						width: "50%",
 						bgcolor: "black",

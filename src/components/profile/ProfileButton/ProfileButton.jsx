@@ -1,8 +1,9 @@
 import { Button } from "@mui/material";
-
+import './ProfileButton.css'
 const ProfileButton = ({ text }) => {
 	return (
 		<Button
+		className="profile-button"
 			sx={{
 				fontWeight: "700",
 				marginRight: "10px",
