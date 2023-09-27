@@ -69,7 +69,7 @@
   bottom: 0;
 }
 
-@media (max-width: 1264px) {
+@media (max-width: 1394px) {
   .sidenav{
     width: 80px;
   }
