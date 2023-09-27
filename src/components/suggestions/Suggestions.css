@@ -38,7 +38,10 @@
   color: grey;
   font-size: 14px;
 }
-
+.suggestions-avatar{
+  width: 90px;
+  height: 90px;
+}
 .suggestions__username {
   display: flex;
   justify-content: space-between;
@@ -82,4 +85,456 @@
 .username {
   font-weight: 600;
   font-size: 14px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .suggestions {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
+  .suggestions__title {
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .suggestions__see__more {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suggestions__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .username__left {
+    display: inline-flex;
+  }
+  
+  .username__left__header {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .username__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .relation {
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .suggestions__username {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .suggestions__username__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .suggestions__username:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .suggestions__username__header:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .follow__button {
+    color: #0095f6;
+    font-weight: bold;
+    background: 0;
+    border: 0;
+    margin-right: 5px;
+  }
+  
+  .follow__button:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .username {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .suggestions {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
+  .suggestions__title {
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .suggestions__see__more {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suggestions__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .username__left {
+    display: inline-flex;
+  }
+  
+  .username__left__header {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .username__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .relation {
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .suggestions__username {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .suggestions__username__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .suggestions__username:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .suggestions__username__header:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .follow__button {
+    color: #0095f6;
+    font-weight: bold;
+    background: 0;
+    border: 0;
+    margin-right: 5px;
+  }
+  
+  .follow__button:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .username {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 960px and up) */
+@media screen and (min-width: 960px) and (max-width: 1394px) {
+  .suggestions {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
+  .suggestions__title {
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .suggestions__see__more {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suggestions__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .username__left {
+    display: inline-flex;
+  }
+  
+  .username__left__header {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .username__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .relation {
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .suggestions__username {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .suggestions__username__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .suggestions__username:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .suggestions__username__header:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .follow__button {
+    color: #0095f6;
+    font-weight: bold;
+    background: 0;
+    border: 0;
+    margin-right: 5px;
+  }
+  
+  .follow__button:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .username {
+    font-weight: 600;
+    font-size: 14px;
+  }
+   
+}
+
+/* Large devices (laptops/desktops, 1395px and up) */
+@media screen and (min-width: 1395px) and (max-width: 1597px) {
+  .suggestions {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
+  .suggestions__title {
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .suggestions__see__more {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suggestions__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .username__left {
+    display: inline-flex;
+  }
+  
+  .username__left__header {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .username__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .relation {
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .suggestions__username {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .suggestions__username__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .suggestions__username:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .suggestions__username__header:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .follow__button {
+    color: #0095f6;
+    font-weight: bold;
+    background: 0;
+    border: 0;
+    margin-right: 5px;
+  }
+  
+  .follow__button:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .username {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+}
+
+/* Extra large devices (laptops/desktops, 1598px and up) */
+@media screen and (min-width: 1598px) {
+  .suggestions {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .suggestions-avatar{
+    width: 95px;
+    height: 65px;
+  }
+  .suggestions__title {
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .suggestions__see__more {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suggestions__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .username__left {
+    display: inline-flex;
+  }
+  
+  .username__left__header {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .username__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .relation {
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .suggestions__username {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .suggestions__username__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .suggestions__username:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .suggestions__username__header:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 20px;
+  }
+  
+  .follow__button {
+    color: #0095f6;
+    font-weight: bold;
+    background: 0;
+    border: 0;
+    margin-right: 5px;
+  }
+  
+  .follow__button:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .username {
+    font-weight: 600;
+    font-size: 14px;
+  }
 }

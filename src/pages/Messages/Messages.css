@@ -13,8 +13,9 @@
 .content{
     width: 80%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 900px;
 }
 
@@ -48,41 +49,368 @@
     justify-content: space-between;
     align-items: center;
 }
+.message-heading{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px 20px 10px 20px;
+}
+.message-description{
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #606060;
+}
+
 .line{
     border-bottom: 1px solid gray;}
-.user-info{
-    display: flex;
-    align-items: center;
-}
 
-.user-name{
-    font-size: 18px;
-    font-weight: 700;
-    padding-left: 10px;
-}
+@media screen and (max-width: 768px) {
+    .messages{
+        width: 100%;
+        margin-left:10px;
+    }
+    .messages-wrapper {
+        display: flex;
+    }
+    .inbox{
+        width:10%;
+        border-right: 1px solid rgba(128, 128, 128, 0.305);
+    }
+    .content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .inbox-top-section{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 900;
+        align-items: center;
+    }
+    .inbox-middle-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+    
+    }
 
-.chat-content{
-    margin: 5px 25px 25px 25px;
-display: flex;
-justify-content: space-between;
-border: 1px solid white;
-border-radius: 20px;
-padding: 10px;
-}
+    .inbox-middle-section a{
+        color:gray;
+        text-decoration: none;
+    }
+    .inbox-bottom-section{
+        font-weight: 900;
+    }
+    .messages-text{
+        font-size: 12px;
+    }
+    .request-text{
+        font-size: 12px;
+    }
+    .inbox-bottom-section .MuiListItemButton-root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .inbox-bottom-section .MuiListItemText-primary {
+          display: none;
+        }
+      .inbox-bottom-section .MuiListItemIcon-root {
+        margin-bottom: 8px; /* Add some space between Avatar and text */
+      }
+    
+      .inbox-bottom-section .MuiListItemText-root {
+        text-align: center; /* Center the text */
+      }
+    
+      .inbox-bottom-section .MuiListItemText-primary {
+        font-size: 14px; /* Adjust font size if needed */
+      }
+      .chat-info{
+        margin:25px 25px 5px 25px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .message-heading{
+        font-size: 25px;
+        font-weight: 900;
+        margin: 20px 20px 10px 20px;
+    }
+    .message-description{
+        margin: 20px;
+        font-size: 14px;
+        font-weight: 900;
+        color: #606060;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 769px) and (max-width: 959px) {
+    .messages{
+        width: 100%;
+        margin-left:70px;
+    }
+    .messages-wrapper {
+        display: flex;
+    }
+    .inbox{
+        width:10%;
+        border-right: 1px solid rgba(128, 128, 128, 0.305);
+    }
+    .content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .inbox-top-section{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 900;
+        align-items: center;
+    }
+    .inbox-middle-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+    
+    }
 
-.message{
-    align-items: center;
-    display: flex;
-}
-.input-message input{
-    margin-left: 5px;
-    width: 950px;
-    padding-left: 10px;
-    font-size: 18px;
-    background:none;
-    border: none;
-}
+    .inbox-middle-section a{
+        color:gray;
+        text-decoration: none;
+    }
+    .inbox-bottom-section{
+        font-weight: 900;
+    }
+    .messages-text{
+        font-size: 12px;
+    }
+    .request-text{
+        font-size: 12px;
+    }
+    .chat-info{
+        margin:25px 25px 5px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .message-heading{
+        font-size: 25px;
+        font-weight: 900;
+        margin: 20px 20px 10px 20px;
+    }
+    .message-description{
+        margin: 20px;
+        font-size: 14px;
+        font-weight: 900;
+        color: #606060;
+    }
+    
+    .inbox-bottom-section .MuiListItemButton-root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .inbox-bottom-section .MuiListItemText-primary {
+          display: none;
+        }
+      .inbox-bottom-section .MuiListItemIcon-root {
+        margin-bottom: 8px; /* Add some space between Avatar and text */
+      }
+    
+      .inbox-bottom-section .MuiListItemText-root {
+        text-align: center; /* Center the text */
+      }
+    
+      .inbox-bottom-section .MuiListItemText-primary {
+        font-size: 14px; /* Adjust font size if needed */
+      }
 
+  }
 
+  
+  /* Medium devices (landscape tablets, 960px and up) */
+  @media screen and (min-width: 960px) and (max-width: 1264px) {
+    .messages{
+        width: 100%;
+        margin-left:70px;
+    }
+    .messages-wrapper {
+        display: flex;
+    }
+    .inbox{
+        width:30%;
+        border-right: 1px solid rgba(128, 128, 128, 0.305);
+    }
+    .content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inbox-top-section{
+        margin:25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 900;
+        align-items: center;
+    }
+    .inbox-middle-section{
+        margin:25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 900;
+    
+    }
+
+    .inbox-middle-section a{
+        color:gray;
+        text-decoration: none;
+    }
+    .inbox-bottom-section{
+        font-weight: 900;
+    }
+    .messages-text{
+        font-size: 12px;
+    }
+    .request-text{
+        font-size: 12px;
+    }
+    .chat-info{
+        margin:25px 25px 5px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .line{
+        border-bottom: 1px solid gray;}
+   
+     
+  }
+  
+  /* Large devices (laptops/desktops, 1395px and up) */
+  @media screen and (min-width: 1395px) and (max-width: 1597px) {
+
+    .messages{
+        width: 100%;
+        margin-left:250px;
+    }
+    .messages-wrapper {
+        display: flex;
+    }
+    .inbox{
+        width:20%;
+        border-right: 1px solid rgba(128, 128, 128, 0.305);
+    }
+    .content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inbox-top-section{
+        margin:25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 900;
+        align-items: center;
+    }
+    .inbox-middle-section{
+        margin:25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 900;
+    
+    }
+    .inbox-middle-section a{
+        color:gray;
+        text-decoration: none;
+    }
+    .inbox-bottom-section{
+        font-weight: 900;
+    }
+    .chat-info{
+        margin:25px 25px 5px 25px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .line{
+        border-bottom: 1px solid gray;}
+   
+  }
+  
+  /* Extra large devices (laptops/desktops, 1598px and up) */
+  @media screen and (min-width: 1598px) {
+
+    .messages{
+        width: 100%;
+        margin-left:250px;
+    }
+    .messages-wrapper {
+        display: flex;
+    }
+    .inbox{
+        width:20%;
+        border-right: 1px solid rgba(128, 128, 128, 0.305);
+    }
+    .content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inbox-top-section{
+        margin:25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 900;
+        align-items: center;
+    }
+    .inbox-middle-section{
+        margin:25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 900;
+    
+    }
+    .inbox-middle-section a{
+        color:gray;
+        text-decoration: none;
+    }
+    .inbox-bottom-section{
+        font-weight: 900;
+    }
+    .chat-info{
+        margin:25px 25px 5px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .line{
+        border-bottom: 1px solid gray;}
+    
+    
+  }
+  
 
 
