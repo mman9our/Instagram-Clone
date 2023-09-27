@@ -38,7 +38,7 @@ const CreatePost = ({ open, onClose }) => {
 				}}
 			>
 				<Fade in={open}>
-					<Box sx={style} width={"38%"} height={"80%"} borderRadius={"20px"}>
+					<Box className="modal" sx={style} width={"38%"} height={"80%"} borderRadius={"20px"}>
 						<Box
 							sx={{
 								borderBottom: "0.5px solid rgb(41, 41, 41)",

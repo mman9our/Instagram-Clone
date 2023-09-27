@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 769px) and (max-width: 959px) {
+
+}
+
+
+/* Medium devices (landscape tablets, 960px and up) */
+@media screen and (min-width: 960px) and (max-width: 1395px) {
+    
+}
+
+/* Large devices (laptops/desktops, 1395px and up) */
+@media screen and (min-width: 1395px) and (max-width: 1597px) {
+    .profile-button{
+        border-radius: 10px !important;
+        text-transform: none !important;
+        padding: 4px 14px !important;
+    }
+}
+
+/* Extra large devices (laptops/desktops, 1598px and up) */
+@media screen and (min-width: 1598px) {
+    .profile-button{
+        border-radius: 10px !important;
+        text-transform: none !important;
+        padding: 4px 14px !important;
+    }
+}
+
+
+

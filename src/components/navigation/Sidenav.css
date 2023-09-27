@@ -6,10 +6,10 @@
   height: 900%;
   width: 250px;
   border-right: 0.1px solid rgb(49, 49, 49);
+  top: auto;
 }
 
 .sidenav__logo {
-  width: 120px;
   margin: 25px;
 }
 
@@ -62,4 +62,112 @@
 .logout__button:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.424);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 1394px) {
+  .sidenav{
+    width: 80px;
+  }
+  .sidenav__button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    width: 69%;
+  }
+  .profile-image{
+padding: 8px;
+  }
+  .sidenav__button span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .sidenav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    border-top: 0.1px solid rgb(49, 49, 49);
+    top: auto;
+  }
+
+.sidenav__buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1%;
+}
+
+  .sidenav__button span {
+    display: none;
+    align-items: center;
+  }
+  
+
+  .sidenav__button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.128);
+    width: 73%;
+  }
+  
+  .sidenav__button > span {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  
+  
+  .logout__button {
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.211);
+    border: 0;
+    padding: 10px;
+  }
+  
+  .logout__button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.424);
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+  }
+  
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  
+}
+
+/* Medium devices (landscape tablets, 960px and up) */
+@media screen and (min-width: 960px) and (max-width: 1394px) {
+  
+}
+
+/* Large devices (laptops/desktops, 1395px and up) */
+@media screen and (min-width: 1395px) and (max-width: 1597px) {
+ 
+}
+
+/* Extra large devices (laptops/desktops, 1598px and up) */
+@media screen and (min-width: 1598px) {
+  
 }

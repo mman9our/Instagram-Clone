@@ -17,13 +17,12 @@ function Post({ user, postImage, likes, timestamp, description, comments }) {
             src={postImage}
             sx={{ bgcolor: indigo[500], marginRight: "10px" }}
           ></Avatar>{" "}
-
           {user} • <span style={{ marginLeft: "10px" }}>{timestamp}</span>
         </div>
         <MoreHorizIcon />
       </div>
       <div className="post__image">
-        <img height="650px" width="650px" src={postImage} alt="Post Image" />
+        <img  src={postImage} alt="Post Image" />
       </div>
       <div className="post__footer">
         <div className="post__footerIcons">
