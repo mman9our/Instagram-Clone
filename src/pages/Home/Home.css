@@ -11,11 +11,22 @@
   }
 }
 
+@media screen and (max-width: 710px) {
+  .home__left {
+    flex: 0.3; 
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .home__left {
     flex: 0.6;
-    margin: 0rem 15rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 3rem;
+   
+  }
+  .home__right{
+    display: none;
   }
 }
 

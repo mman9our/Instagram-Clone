@@ -30,7 +30,7 @@ function Sidenav() {
 
 	useEffect(() => {
 		const handleResize = () => {
-			setIsMediumScreen(window.innerWidth <= 1264);
+			setIsMediumScreen(window.innerWidth <= 1394);
 			setIsSmallScreen(window.innerWidth <= 768);
 		};
 

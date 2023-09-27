@@ -50,7 +50,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .post {
-    width: 680px;
+    width: 400px;
     margin: 20px 40px 50px 40px;
   }
   
@@ -100,7 +100,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) and (max-width: 959px) {
   .post {
-    width: 680px;
+    width: 580px;
     margin: 20px 40px 50px 40px;
   }
   
