@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 1394px) {
-  .sidenav{
+  .sidenav {
     position: relative;
     min-width: 80px;
   }
@@ -77,15 +77,15 @@
     background-color: rgba(255, 255, 255, 0.128);
     width: 69%;
   }
-  .profile-image{
-padding: 8px;
+  .profile-image {
+    padding: 8px;
   }
   .sidenav__button span {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .sidenav{
+  .sidenav {
     display: flex;
     bottom: 0;
     flex-direction: row;
@@ -99,31 +99,29 @@ padding: 8px;
     top: auto;
   }
 
-.sidenav__buttons {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 1%;
-}
+  .sidenav__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+  }
 
   .sidenav__button span {
     display: none;
     align-items: center;
   }
-  
 
   .sidenav__button:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.128);
     width: 73%;
   }
-  
+
   .sidenav__button > span {
     font-size: 15px;
     margin-left: 10px;
   }
-  
-  
+
   .logout__button {
     font-size: 15px;
     border-radius: 10px;
@@ -133,41 +131,34 @@ padding: 8px;
     border: 0;
     padding: 10px;
   }
-  
+
   .logout__button:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.424);
   }
-  
+
   .bottom-nav {
     position: fixed;
     bottom: 0;
   }
-  
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
- 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) and (max-width: 959px) {
-  
 }
 
 /* Medium devices (landscape tablets, 960px and up) */
 @media screen and (min-width: 960px) and (max-width: 1394px) {
-  
 }
 
 /* Large devices (laptops/desktops, 1395px and up) */
 @media screen and (min-width: 1395px) and (max-width: 1597px) {
- 
 }
 
 /* Extra large devices (laptops/desktops, 1598px and up) */
 @media screen and (min-width: 1598px) {
-  
 }
