@@ -5,7 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.profile-avatar {
+  width: 200px !important;
+  height: 200px !important;
+}
 .profile-details {
   margin-top: 20px;
   display: flex;
@@ -85,7 +88,7 @@
   }
   .profile-avatar {
    
-    width: 100px !important;
+    width: 400px !important;
     height: 100px !important;
   }
   .TabPanel{
