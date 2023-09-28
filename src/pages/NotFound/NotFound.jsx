@@ -14,6 +14,7 @@ const NotFound = () => {
           flexDirection: "column",
           alignItems: "center",
           marginTop: "30px",
+          textAlign: "center",
         }}
       >
         <h1>Sorry, this page isnt available.</h1>
