@@ -475,6 +475,7 @@ const Profile = () => {
 
 						<TabPanel
 							value="2"
+							className="TabPanel"
 							sx={{
 								padding: 0,
 								color: "white",
@@ -496,6 +497,7 @@ const Profile = () => {
 						</TabPanel>
 						<TabPanel
 							value="3"
+							className="TabPanel"
 							sx={{
 								padding: 0,
 								color: "white",
