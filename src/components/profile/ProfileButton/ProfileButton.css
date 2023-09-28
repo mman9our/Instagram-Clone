@@ -1,11 +1,27 @@
-
-@media screen and (max-width: 768px) {
-
+.profile-button{
+    padding: 5px 5px !important;
+    width: 160px !important;
+    cursor: pointer;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 769px) and (max-width: 959px) {
+@media screen and (max-width: 600px) {
+    .profile-button{
+        border-radius: 10px !important;
+        text-transform: none !important;
+        padding: 0px !important;
+        width: 10px;
+    }
+}
 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 769px) and (max-width: 940px) {
+    .profile-button{
+        border-radius: 10px !important;
+        text-transform: none !important;
+        padding: 2px 10px !important;
+    }
 }
 
 

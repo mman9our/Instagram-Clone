@@ -19,7 +19,9 @@ const ProfilePost = ({ img, likes, comments }) => {
 		>
 			<img src={img} />
 			<div className="photo-icon">
-				<ContentCopyIcon />
+				<ContentCopyIcon
+					sx={{ fontSize: { xs: 15, sm: 15, md: 20, lg: 25 } }}
+				/>
 			</div>
 			{isHovered && (
 				<div className="reactions">
