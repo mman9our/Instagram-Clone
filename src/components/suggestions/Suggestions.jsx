@@ -1,8 +1,13 @@
 import { Avatar } from "@mui/material";
 import "./Suggestions.css";
 import { Typography } from "@mui/material";
-
-import {  blueGrey } from "@mui/material/colors";
+import { blueGrey } from "@mui/material/colors";
+import image1 from "../../assets/Avatars/steward.png";
+import image2 from "../../assets/Avatars/singer.png";
+import image3 from "../../assets/Avatars/cock-man.png";
+import image4 from "../../assets/Avatars/nurse.png";
+import image5 from "../../assets/Avatars/shop-assistant.png";
+import image6 from "../../assets/Avatars/boy.png";
 
 function Suggestions() {
   let suggestionsPersons = [
@@ -10,31 +15,31 @@ function Suggestions() {
       id: 1,
       userName: "Ward Daraghmeh",
       relation: "Followed by moath",
-      profileImage: "src/assets/Avatars/steward.png",
+      profileImage: image1,
     },
     {
       id: 2,
       userName: "Batool Azzam",
       relation: "Followed by anwar",
-      profileImage: "src/assets/Avatars/singer.png",
+      profileImage: image2,
     },
     {
       id: 3,
       userName: "Omar Yasin",
       relation: "New to Instagram",
-      profileImage: "src/assets/Avatars/cock-man.png",
+      profileImage: image3,
     },
     {
       id: 4,
       userName: "Anwar Ghannam",
       relation: "Followed by hala",
-      profileImage: "src/assets/Avatars/nurse.png",
+      profileImage: image4,
     },
     {
       id: 5,
       userName: "Jenan Kmail",
       relation: "New to Instagra",
-      profileImage: "src/assets/Avatars/shop-assistant.png",
+      profileImage: image5,
     },
   ];
   return (
@@ -43,7 +48,7 @@ function Suggestions() {
         <div className="username__left">
           <Avatar
             sx={{ bgcolor: blueGrey[500], fontSize: "17px" }}
-            src="src/assets/Avatars/boy.png"
+            src={image6}
           ></Avatar>
 
           <div className="username__info">
