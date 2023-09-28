@@ -11,7 +11,7 @@ function Timeline() {
       postImage:
         "https://i.seadn.io/gcs/files/86d12c8064b032cb853466418480482e.png?auto=format&dpr=1&w=1000",
       likes: 744,
-      timestamp: "2h",
+      timestamp: "1h",
       description:
         "Enjoying a peaceful evening by the beach, watching the sun set over the horizon. The colors are simply breathtaking.☀️🤍",
       comments: 122,
