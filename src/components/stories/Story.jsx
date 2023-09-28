@@ -1,95 +1,57 @@
 import { Avatar, Typography } from "@mui/material";
 import "./Story.css";
 import { useEffect, useState } from "react";
+import image1 from "../../assets/StoriesAvatars/saleswoman.png";
+import image2 from "../../assets/StoriesAvatars/driver.png";
+import image3 from "../../assets/StoriesAvatars/cock-man.png";
+import image4 from "../../assets/StoriesAvatars/female-chef.png";
+import image5 from "../../assets/StoriesAvatars/flight-attendant.png";
+import image6 from "../../assets/StoriesAvatars/graduated-student.png";
+import image7 from "../../assets/StoriesAvatars/farmer-avatar.png";
 
 function Story() {
-  // const [stories] = useState([
-  //   {
-  //     id: 1,
-  //     username: "ameena",
-  //     profileImage: "src/assets/StoriesAvatars/saleswoman.png",
-  //     bgColor: "#071a33",
-  //   },
-  //   {
-  //     id: 2,
-  //     username: "moath",
-  //     profileImage: "src/assets/StoriesAvatars/driver.png",
-  //     bgColor: "#071a33",
-  //   },
-  //   {
-  //     id: 3,
-  //     username: "obada",
-  //     profileImage: "src/assets/Avatars/cock-man.png",
-  //     bgColor: "#071a33",
-  //   },
-  //   {
-  //     id: 4,
-  //     username: "saja",
-  //     profileImage: "src/assets/StoriesAvatars/female-chef.png",
-  //     bgColor: "#071a33",
-  //   },
-  //   {
-  //     id: 5,
-  //     username: "dalal",
-  //     profileImage: "src/assets/StoriesAvatars/flight-attendant.png",
-  //     bgColor: "#071a33",
-  //   },
-  //   {
-  //     id: 6,
-  //     username: "ahmad",
-  //     profileImage: "src/assets/StoriesAvatars/graduated-student.png",
-  //     bgColor: "#071a33",
-  //   },
-  //   {
-  //     id: 7,
-  //     username: "adel",
-  //     profileImage: "src/assets/StoriesAvatars/farmer-avatar.png",
-  //     bgColor: "#071a33",
-  //   },
-  // ]);
-
   const [visibleStories, setVisibleStories] = useState([]);
   const [stories] = useState([
     {
       id: 1,
       username: "ameena",
-      profileImage: "src/assets/StoriesAvatars/saleswoman.png",
+      profileImage: image1,
       bgColor: "#071a33",
     },
     {
       id: 2,
       username: "moath",
-      profileImage: "src/assets/StoriesAvatars/driver.png",
+      profileImage: image2,
       bgColor: "#071a33",
     },
     {
       id: 3,
       username: "obada",
-      profileImage: "src/assets/Avatars/cock-man.png",
+      profileImage: image3,
       bgColor: "#071a33",
     },
     {
       id: 4,
       username: "saja",
-      profileImage: "src/assets/StoriesAvatars/female-chef.png",
+      profileImage: image4,
       bgColor: "#071a33",
     },
     {
       id: 5,
       username: "dalal",
-      profileImage: "src/assets/StoriesAvatars/flight-attendant.png",
+      profileImage: image5,
       bgColor: "#071a33",
     },
     {
       id: 6,
       username: "ahmad",
-      profileImage: "src/assets/StoriesAvatars/graduated-student.png",
+      profileImage: image6,
       bgColor: "#071a33",
     },
     {
       id: 7,
       username: "adel",
-      profileImage: "src/assets/StoriesAvatars/farmer-avatar.png",
+      profileImage: image7,
       bgColor: "#071a33",
     },
   ]);

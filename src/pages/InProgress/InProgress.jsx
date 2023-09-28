@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import Container from "@mui/material/Container";
+import image from "../../assets/rocket-launch.png";
 
 const InProgress = () => {
   return (
@@ -29,7 +30,7 @@ const InProgress = () => {
         </Typography>
 
         <img
-          src={`src/assets/rocket-launch.png`}
+          src={image}
           alt="Rocket Launch"
           style={{ width: "200px", height: "200px" }}
         />
