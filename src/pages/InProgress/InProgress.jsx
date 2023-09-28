@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import Container from "@mui/material/Container";
 
 const InProgress = () => {
@@ -13,16 +14,24 @@ const InProgress = () => {
           marginTop: "30px",
         }}
       >
-        <h1>In Progress♨️</h1>
+        <h1 style={{ textAlign: "center" }}>In Progress♨️</h1>
 
-        <p style={{ color: "grey" }}>
+        <Typography
+          variant="body1"
+          style={{
+            color: "grey",
+
+            textAlign: "center",
+          }}
+          gutterBottom
+        >
           This page is currently under construction and will be coming soon.
-        </p>
+        </Typography>
 
         <img
           src={`src/assets/rocket-launch.png`}
           alt="Rocket Launch"
-          style={{ width: "200px", height: "200px" }} 
+          style={{ width: "200px", height: "200px" }}
         />
       </Container>
     </>
