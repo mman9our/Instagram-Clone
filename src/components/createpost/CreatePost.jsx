@@ -38,7 +38,13 @@ const CreatePost = ({ open, onClose }) => {
 				}}
 			>
 				<Fade in={open}>
-					<Box className="modal" sx={style} width={"38%"} height={"80%"} borderRadius={"20px"}>
+					<Box
+						className="modal"
+						sx={style}
+						width={"38%"}
+						height={"80%"}
+						borderRadius={"20px"}
+					>
 						<Box
 							sx={{
 								borderBottom: "0.5px solid rgb(41, 41, 41)",
@@ -59,46 +65,92 @@ const CreatePost = ({ open, onClose }) => {
 							id="transition-modal-description"
 							sx={{
 								mt: 2,
-								width: "300px",
-								height: "300px",
-								justifyContent: "center",
-								alignItems: "center",
-								position: "absolute",
-								top: "30%",
-								bottom: "30%",
-								left: "28%",
-								right: "30%",
 								color: "white",
-								fontWeight: "900",
+								fontWeight: 900,
+								padding: "40px",
 							}}
 						>
-							<div className="image-video">
-								<div className="image">
-									<PhotoOutlinedIcon
-										sx={{
-											fontSize: { xs: 12, sm: 16, md: 25, lg: 60 },
+							<Box className="inputTitle">
+								<div>Title</div>
+								<div>
+									<input
+										style={{
 											color: "white",
+											marginTop: "15px",
+											backgroundColor: "#4D4D4D",
+											width: "550px",
+											padding: "10px",
+											borderRadius: "10px",
+											border: "1px solid white",
 										}}
-									/>
+									></input>
 								</div>
-								<div className="video">
-									<SmartDisplayOutlinedIcon
-										sx={{ fontSize: { xs: 12, sm: 16, md: 25, lg: 60 } }}
-									/>
+							</Box>
+							<Box className="inputTitle" sx={{ marginTop: "30px" }}>
+								<div>Body</div>
+								<div>
+									<textarea
+										style={{
+											color: "white",
+
+											marginTop: "15px",
+											backgroundColor: "#4D4D4D",
+											width: "550px",
+											height: "200px",
+											borderRadius: "10px",
+
+											border: "1px solid white",
+										}}
+									></textarea>
 								</div>
-							</div>
-							<div style={{ display: "flex", justifyContent: "center" }}>
-								Drag photos and videos here{" "}
-							</div>
+							</Box>
+							<Box className="inputTitle" sx={{ marginTop: "80px" }}>
+								<div>Image URL</div>
+								<div>
+									<input
+										style={{
+											color: "white",
+
+											marginTop: "15px",
+											backgroundColor: "#4D4D4D",
+											width: "550px",
+											padding: "10px",
+											borderRadius: "10px",
+											border: "1px solid white",
+										}}
+									></input>
+								</div>
+							</Box>
 							<div
 								style={{
-									margin: "75px 45px 45px 45px",
-									background: "rgb(14, 104, 197)",
-									borderRadius: "8px",
+									marginTop: "30px",
+									alignItems: "center",
+									justifyContent: "center",
+									display: "flex",
 								}}
 							>
-								<Button sx={{ color: "white", padding: "8px" }}>
-									Select from computer
+								<Button
+									className="send-message-btn"
+									sx={{
+										fontWeight: 900,
+										paddingTop: "5px",
+										paddingBottom: "5px",
+										borderRadius: "10px",
+										fontSize: "14px",
+										color: "white",
+										backgroundColor: "rgb(14,127 ,244)",
+										":hover": {
+											bgcolor: "rgb(3, 90, 168)",
+											color: "white",
+										},
+										"&:active": {
+											boxShadow: "none",
+											backgroundColor: "#rgb(14,127 ,244)",
+											color: "white",
+										},
+									}}
+								>
+									Post{" "}
 								</Button>
 							</div>
 						</Typography>
