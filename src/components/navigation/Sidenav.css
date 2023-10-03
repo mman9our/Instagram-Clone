@@ -69,6 +69,7 @@
 
 @media (max-width: 1394px) {
   .sidenav {
+
     position: relative;
     min-width: 80px;
   }
